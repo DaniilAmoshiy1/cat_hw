@@ -33,6 +33,7 @@ function setUpdateInterval() {
 intervalInput.addEventListener('input', function(e) {
     if (e.target.value.startsWith('-')) {
         e.target.value = '';
+        errorMessage.style.display = 'block';
     }
     setUpdateInterval();
 });
